@@ -1,7 +1,8 @@
+[![Watch the video](https://img.youtube.com/vi/854yhZibRV8/maxresdefault.jpg)](https://youtu.be/854yhZibRV8)
+
+
 # WebSketch-Converter
 This Flask application allows users to upload an image and receive a code snippet that describes the image. The code snippet is generated using the LangChain library and the Gemini API.
-
-[![Watch the video](https://img.youtube.com/vi/854yhZibRV8/maxresdefault.jpg)](https://youtu.be/854yhZibRV8?si=onHwv7PMIdPX_xd8)
 -
 Clone the repository:
 
