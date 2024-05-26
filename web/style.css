@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.code-output {
+  max-width: 600px;
+  padding: 24px;
+  margin: 24px 0;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  word-break: break-all;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 24px;
+  }
+
+  .code-output {
+    margin: 16px 0;
+  }
+}
+
+.image-upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.image-upload-container.dragover {
+  border-color: #008000;
+}
+
+.image-upload-icon {
+  font-size: 48px;
+  color: #ccc;
+}
+
+.image-upload-text {
+  margin-left: 12px;
+  font-size: 16px;
+  color: #666;
+}
+
+.button-container {
+  margin-top: 24px;
+  /* display: flex; */
+  /* align-items: center; */
+  text-align:center;
+}
+
+.generate-code-button {
+  background-color: #008000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generate-code-button:hover {
+  background-color: #006400;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #000;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#image-container img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 10px;
+}
+
+#copy-button {
+  background-color: #008000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#copy-button:hover {
+  background-color: #006400;
+}
+
+#html-output {
+  text-align: left;
+}

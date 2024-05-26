@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Output from Image Input</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <h1>Image to Code</h1>
+    <form id="image-form"> 
+      <div class="image-upload-container" id="image-upload-container">
+        <input type="file" accept="image/*" id="image-upload" style="display:none;">
+        <span class="image-upload-icon">+</span>
+        <span class="image-upload-text">Drag and drop an image here or click to select a file</span>
+      </div>
+      <div class="button-container">
+        <button type="submit" class="generate-code-button">Generate Code</button>
+      </div>
+      <div id="image-container"></div>
+    </form>
+    <div class="spinner" id="spinner" style="display:none;"></div>
+    <div class="code-output" id="code-output" style="display:none;">
+      <h2>Generated Code:</h2>
+      <div id="loading" style="display:none;">Generating...</div>
+      <div id="html-output"></div>
+      <button id="copy-button" style="display:none;">Copy</button>
+    </div>
+  </main>
+  <script src="https://unpkg.com/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
+  <script src="https://unpkg.com/base64-js@1.3.0/base64js.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
